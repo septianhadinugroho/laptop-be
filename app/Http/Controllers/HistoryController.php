@@ -10,4 +10,8 @@ class HistoryController extends Controller
     public function history(){
         return view('history');
     }
+    // history hal admin
+    public function historylaporan(){
+        return view('admin.historylaporan');
+    }
 }

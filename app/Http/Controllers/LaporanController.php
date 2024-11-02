@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Auth;
 class LaporanController extends Controller
 {
     // Method untuk menampilkan form laporan
-    
+
     public function store(Request $request)
     {
         // Validasi data
@@ -32,8 +32,8 @@ class LaporanController extends Controller
                 $mediaPaths[] = $file->store('media', 'public');
             }
         }
-        
-        $mediaPath = implode(',', $mediaPaths);        
+
+        $mediaPath = implode(',', $mediaPaths);
 
         // Simpan laporan ke database
         Pelaporan::create([
@@ -46,11 +46,16 @@ class LaporanController extends Controller
             'nama_pelapor' => Auth::user()->name,
             'lokasi' => $request->lokasi,
         ]);
-        
+
         // Cek data yang akan disimpan
-        dd($request->all());        
+        dd($request->all());
 
         // Redirect dengan pesan sukses
         return redirect()->back()->with('success', 'Laporan berhasil disimpan.');
+    }
+
+    // laporan halaman admin
+    public function admin(){
+        return view('admin.laporan');
     }
 }
