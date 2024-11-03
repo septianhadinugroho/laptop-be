@@ -8,6 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+    <!-- Icon Web -->
+    <link rel="shortcut icon" href="images/iconlaptop.ico" type="image/x-icon">
+
     <!-- CSS Eksternal -->
     <link rel="stylesheet" href="css/admin/main.css">
     <link rel="stylesheet" href="css/admin/dashboard.css">
@@ -22,13 +25,13 @@
             <h4>LAPTOP</h4>
         </div>
         <ul>
-            <li><a href="#" class="active"><i class="bi bi-speedometer2"></i> Dashboard</a></li>
-            <li><a href="#"><i class="bi bi-people"></i> Pengguna</a></li>
-            <li><a href="#"><i class="bi bi-list"></i> Jenis</a></li>
-            <li><a href="#"><i class="bi bi-file-earmark-text"></i> Laporan</a></li>
-            <li><a href="#"><i class="bi bi-clock-history"></i> History Laporan</a></li>
-            <li><a href="#"><i class="bi bi-person-circle"></i> Profile</a></li>
-            <li><a href="#"><i class="bi bi-box-arrow-right"></i> Log Out</a></li>
+            <li><a href="/dashboard" class="active"><i class="bi bi-speedometer2"></i> Dashboard</a></li>
+            <li><a href="/pengguna"><i class="bi bi-people"></i> Pengguna</a></li>
+            <li><a href="/jenis"><i class="bi bi-list-ul"></i> Jenis</a></li>
+            <li><a href="/laporan"><i class="bi bi-file-earmark-text"></i> Laporan</a></li>
+            <li><a href="/historylaporan"><i class="bi bi-clock-history"></i> History Laporan</a></li>
+            <li><a href="/profile"><i class="bi bi-person-circle"></i> Profile</a></li>
+            <li><a href="/logout"><i class="bi bi-box-arrow-right"></i> Log Out</a></li>
         </ul>
     </div>
 
@@ -46,7 +49,7 @@
                         </a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a href="#" class="nav-link text-dark">
+                        <a href="/profile" class="nav-link text-dark">
                             <i class="bi bi-person-circle"></i> Profile
                         </a>
                     </li>

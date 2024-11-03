@@ -1,5 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
+body {
+    background-color: #f8f9fa;
+}
+.profile-card {
+    max-width: 600px; /* Set a maximum width for the card */
+    margin: 40px auto; /* Center the card with margin */
+    background-color: #e3f2fd; 
+    padding: 20px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.profile-header h2 {
+    color: #007bff;
+}
+
 * {
     font-family: 'Poppins', sans-serif;
 }
@@ -46,7 +65,7 @@
 .main {
     margin-left: 0;
     transition: all 0.3s;
-    background-color: #e0e0e0;
+    /* background-color: #e0e0e0; */
 }
 .main.show-sidebar {
     margin-left: 250px;
